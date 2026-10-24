@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#180811" />
+  <title>A Little Love Invitation ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="aurora"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="topline"><span>MADE WITH LOVE</span><span class="top-heart">♥</span><span>JUST FOR YOU</span></div>
+
+  <main class="scene">
+    <section class="intro" id="intro">
+      <p class="eyebrow"><span></span> A tiny surprise for someone special <span></span></p>
+      <h1>Some feelings<br>deserve <em>a little magic.</em></h1>
+      <p class="intro-copy">A small invitation, wrapped in a little mystery<br class="desktop-only"> and a whole lot of heart.</p>
+
+      <button class="envelope-button" id="openLetter" aria-label="Open your love letter">
+        <span class="envelope-glow"></span>
+        <span class="letter-preview"><span>To my favourite person</span><b>♥</b></span>
+        <span class="envelope-back"></span>
+        <span class="envelope-flap"></span>
+        <span class="envelope-front"></span>
+        <span class="seal">♥</span>
+      </button>
+      <p class="tap-hint"><span class="pulse-dot"></span> TAP THE ENVELOPE TO OPEN</p>
+      <div class="scroll-note">A moment made just for you <span>↓</span></div>
+    </section>
+
+    <section class="letter-section" id="letterSection" aria-hidden="true">
+      <div class="letter-card">
+        <div class="card-sparkle sparkle-one">✦</div><div class="card-sparkle sparkle-two">✧</div>
+        <p class="letter-kicker">A NOTE FROM THE HEART</p>
+        <div class="tiny-divider"><span>♥</span></div>
+        <p class="dear">Dear <span id="recipientName">My Favourite Person</span>,</p>
+        <p class="letter-message" id="typedMessage"></p>
+        <p class="letter-signoff">With all my heart,</p>
+        <p class="sender" id="senderName">Someone who cares about you</p>
+        <div class="card-bottom-heart">♡</div>
+      </div>
+
+      <div class="invite-panel">
+        <p class="eyebrow"><span></span> THE IMPORTANT QUESTION <span></span></p>
+        <h2>Will you make<br><em>this moment</em> ours?</h2>
+        <p class="invite-copy">Let's make a beautiful memory together.</p>
+        <div class="buttons">
+          <button class="yes-button" id="yesBtn">Yes, let's make a memory <span>♥</span></button>
+          <button class="later-button" id="laterBtn">I need a little time</button>
+        </div>
+        <p class="consent-note">No pressure, just a heartfelt invitation. 💗</p>
+      </div>
+    </section>
+
+    <section class="celebration" id="celebration" aria-hidden="true">
+      <div class="heart-art" role="img" aria-label="A glowing, gently rotating 3D heart">
+        <canvas id="heartCanvas" aria-hidden="true"></canvas>
+        <span class="heart-fallback" aria-hidden="true">♥</span>
+        <span class="heart-orbit orbit-one" aria-hidden="true"></span>
+        <span class="heart-orbit orbit-two" aria-hidden="true"></span>
+      </div>
+      <p class="eyebrow">A MEMORY IN THE MAKING</p>
+      <h2>You've made my heart<br><em>smile.</em></h2>
+      <p>Here's to laughter, little adventures, and a moment we'll remember.</p>
+      <button class="share-button" id="shareBtn">Share this invitation <span>↗</span></button>
+      <button class="restart-button" id="restartBtn">Replay the magic ↺</button>
+    </section>
+  </main>
+
+  <button class="sound-button" id="soundBtn" aria-label="Toggle gentle sound" title="Toggle gentle sound"><span class="sound-icon">♫</span><span id="soundLabel">Sound off</span></button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <footer>DESIGNED WITH <span>♥</span> · A LITTLE LOVE, A LITTLE MAGIC</footer>
+  <script src="script.js"></script>
+</body>
+</html>
